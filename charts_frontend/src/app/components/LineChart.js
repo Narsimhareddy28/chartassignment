@@ -1,4 +1,3 @@
-// src/app/components/LineChart.js
 
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LinearScale, PointElement, LineElement, Tooltip, Legend, Title } from 'chart.js';

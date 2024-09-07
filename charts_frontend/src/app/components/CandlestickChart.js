@@ -1,4 +1,3 @@
-// src/app/components/CandlestickChart.js
 
 import { useEffect } from 'react';
 import { Chart, registerables } from 'chart.js';

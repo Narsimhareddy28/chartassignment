@@ -1,4 +1,3 @@
-// src/app/page.js (or src/pages/index.js)
 
 "use client"; // This line marks the component as a Client Component
 
@@ -15,7 +14,7 @@ const Dashboard = () => {
   const [pieData, setPieData] = useState({});
   const [candlestickData, setCandlestickData] = useState([]);
   const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false); // State to control loading animation
+  const [isLoaded, setIsLoaded] = useState(false); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,7 +34,7 @@ const Dashboard = () => {
       } catch (err) {
         setError('Failed to fetch chart data.');
       } finally {
-        setIsLoaded(true); // Set loaded state to true
+        setIsLoaded(true); 
       }
     };
 
