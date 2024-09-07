@@ -1,0 +1,9 @@
+Charts_frontend
+Npm run dev
+
+Charts_backend
+python manage.py runserver
+
+Docker command :
+
+docker-compose up --build
