@@ -13,11 +13,13 @@
     "chart.js": "^4.4.4",
     "chartjs-adapter-date-fns": "^3.0.0",
     "chartjs-chart-financial": "^0.2.1",
+    "date-fns": "^3.6.0",
     "dayjs": "^1.11.13",
     "next": "14.2.8",
     "react": "^18",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
+    "react-stockcharts": "^0.7.8",
     "recharts": "^2.12.7"
   },
   "devDependencies": {

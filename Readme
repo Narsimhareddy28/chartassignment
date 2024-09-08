@@ -1,8 +1,14 @@
+This project is a web-based application that provides various interactive charts such as Line Chart, Bar Chart, Pie Chart, and Candlestick Chart by chart.js.
+ The frontend is built using a modern JavaScript framework, and the backend is implemented in Python using Django and Django REST Framework.
+
+
 Charts_frontend
 npm install
-Npm run dev
+npm run dev
 
 Charts_backend
+python -m venv env
+source env/bin/activate
 python manage.py runserver
 
 Docker command :

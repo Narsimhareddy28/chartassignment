@@ -24,13 +24,20 @@ const Dashboard = () => {
         const pieData = await fetchPieChartData();
         const candlestickData = await fetchCandlestickData();
         
+        const processedCandlestickData = candlestickData.data.map(item => ({
+          x: new Date(item.x),
+          open: item.open,
+          high: item.high,
+          low: item.low,
+          close: item.close
+        }));
         
         
         setLineData(lineData);
         setBarData(barData);
         setPieData(pieData);
-        setCandlestickData(candlestickData.data);
-        console.log("Processedsss candlestick data:", candlestickData); // Log processed data
+        setCandlestickData(processedCandlestickData);
+        console.log("Processedsss candlestick data:", processedCandlestickData); // Log processed data
       } catch (err) {
         setError('Failed to fetch chart data.');
       } finally {
@@ -60,7 +67,7 @@ const Dashboard = () => {
         </div>
         <div className={`bg-gray-800 rounded-lg shadow-lg p-4 transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
           <h2 className="text-xl font-semibold text-vibrantBlue mb-2">Candlestick Chart</h2>
-          <CandlestickChart data={candlestickData} />
+          <CandlestickChart data={candlestickData} ratio={1} />
         </div>
       </div>
     </div>
